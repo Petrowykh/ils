@@ -6,3 +6,5 @@ def create_app():
     return app
 
 app = create_app()
+
+from app import routes
