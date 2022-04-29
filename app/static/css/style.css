@@ -48,16 +48,39 @@ img {
     border-radius: 20px;
     box-shadow: var(--shadow);
     padding: 1.2rem;
+    overflow-y: auto;
 }
 
 .sidebar-avatar {
-    display: grid;
-    grid-template-columns: 70px auto;
+    
     align-items: center;
     border: 2px solid var(--main-accent);
     padding: .1rem .7rem;
     border-radius: 7px;
     margin: 2.5rem 0rem;
+}
+
+.sidebar-avatar img {
+    height: 60px;
+    width: 60px;
+}
+
+.sidebar-card {
+    background: var(--main-accent);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+    box-shadow: var(--shadow);
+}
+.sidebar-card__icon span {
+    font-size: 8rem;
+    color: var(--color-main);  
+    display: inline-block;
+}
+
+.sidebar-card__icon {
+    margin-bottom: .8rem;
 }
 
 .brand h2{
@@ -105,3 +128,67 @@ img {
     width: calc(100vw - 345px);
     padding: 1rem 1.2rem;
 }
+
+.btn {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.btn span {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-right: .7rem;
+}
+
+.btn-main {
+    background: var(--color-main);
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: .5rem;
+}
+
+.header-wrapper {
+    display: flex;
+}
+
+.header-title {
+    color: var(--main-text);
+    font-weight: 600;
+}
+.header-title label {
+    display: inline-block;
+    color: var(--color-main);
+    margin-right: 2rem;
+    font-size: 1.8rem;
+}
+
+.header-title h1 {
+    color: var(--main-text);
+    font-weight: 600;
+}
+
+.header-title p {
+    color: #666;
+    font-size: .9rem;
+}
+
+.header-title p span {
+    color: red;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+.header-action button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+
